@@ -7,9 +7,8 @@ function App() {
   const [error, setError] = useState(null);
   const [city, setCity] = useState('Noida');
   const [searchHistory, setSearchHistory] = useState([]);
-  const [theme, setTheme] = useState('light'); // Theme state
-
-  const API_KEY = 'YOUR_API_KEY'; // Replace with your OpenWeatherMap API key
+  const [theme, setTheme] = useState('light');
+  const API_KEY = 'YOUR_API_KEY';
   const [forecastData, setForecastData] = useState(null);
 
   const fetchWeather = async (cityName) => {
